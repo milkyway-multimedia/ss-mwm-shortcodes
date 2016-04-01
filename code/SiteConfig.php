@@ -8,8 +8,7 @@
  * @author  Mellisa Hankins <mell@milkywaymultimedia.com.au>
  */
 
-use Milkyway\SS\Utilities;
-use Milkyway\SS\Core\Director;
+use Director;
 
 use DBField;
 use Email;
@@ -92,7 +91,7 @@ class SiteConfig implements Contract
 
     public function formField()
     {
-        $shortcodes = Utilities::map_array_to_i18n(
+        $shortcodes = singleton('mwm')->map_array_to_i18n(
             \SiteConfig::config()->valid_shortcode_fields,
             'SiteConfig'
         );
@@ -138,4 +137,4 @@ class SiteConfig implements Contract
                 )
             );
     }
-} 
+}

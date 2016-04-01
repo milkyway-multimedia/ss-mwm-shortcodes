@@ -8,7 +8,6 @@
  * @author  Mellisa Hankins <mell@milkywaymultimedia.com.au>
  */
 
-use Milkyway\SS\Utilities;
 use HTMLEditorField;
 use DropdownField;
 use TextField;
@@ -103,7 +102,7 @@ class CssIcon implements Contract
             $icon = DropdownField::create(
                 'use',
                 _t('Shortcodable.ICON', 'Icon'),
-                Utilities::map_array_to_i18n(HTMLEditorField::config()->valid_icon_shortcodes, 'Icon')
+                singleton('mwm')->map_array_to_i18n(HTMLEditorField::config()->valid_icon_shortcodes, 'Icon')
             );
         } else {
             $icon = TextField::create('use', _t('Shortcodable.ICON', 'Icon'));

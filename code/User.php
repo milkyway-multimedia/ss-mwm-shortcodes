@@ -8,8 +8,6 @@
  * @author Mellisa Hankins <mell@milkywaymultimedia.com.au>
  */
 
-use Milkyway\SS\Utilities;
-
 use Member;
 use DBField;
 use Email;
@@ -96,7 +94,7 @@ class User implements Contract
 
     public function formField()
     {
-        $shortcodes = Utilities::map_array_to_i18n(Member::config()->valid_shortcode_fields, 'Member');
+        $shortcodes = singleton('mwm')->map_array_to_i18n(Member::config()->valid_shortcode_fields, 'Member');
         natsort($shortcodes);
 
         return
@@ -138,4 +136,4 @@ class User implements Contract
                 )
             );
     }
-} 
+}

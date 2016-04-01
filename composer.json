@@ -1,0 +1,34 @@
+{
+    "name"       : "milkyway-multimedia/ss-mwm-shortcodes",
+    "description": "Some additional shortcodes and related utilities for Silverstripe",
+    "type"       : "silverstripe-module",
+    "keywords"   : [
+        "silverstripe",
+        "shortcodes",
+        "mwm"
+    ],
+    "license"    : "MIT",
+    "authors"    : [
+        {
+            "name" : "Mellisa Hankins",
+            "email": "mellisa.hankins@me.com"
+        }
+    ],
+    "require"     : {
+        "milkyway-multimedia/ss-mwm-env"  : "~0.3"
+    },
+    "require-dev"       : {
+        "sheadawson/silverstripe-shortcodable": "~1",
+        "thisisbd/silverstripe-fontawesome-iconpickerfield": "~0.4"
+    },
+    "suggest": {
+        "sheadawson/silverstripe-shortcodable": "Allows adding shortcodes via the TinyMCE editor",
+        "thisisbd/silverstripe-fontawesome-iconpickerfield": "Use an icon picker field for font awesome icons."
+    },
+    "extra"      : {
+        "installer-name": "mwm-shortcodes",
+        "branch-alias"  : {
+            "dev-master": "0.3.x-dev"
+        }
+    }
+}

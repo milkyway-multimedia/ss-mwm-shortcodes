@@ -1,0 +1,10 @@
+---
+Name: mwm-shortcodes--injector
+---
+ShortcodeParser:
+  providers:
+    - 'Milkyway\SS\Shortcodes\CssIcon'
+    - 'Milkyway\SS\Shortcodes\GoogleFixUrl'
+    - 'Milkyway\SS\Shortcodes\SiteConfig'
+    - 'Milkyway\SS\Shortcodes\TopController'
+    - 'Milkyway\SS\Shortcodes\User'

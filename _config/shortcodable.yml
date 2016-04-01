@@ -1,0 +1,24 @@
+---
+Name: mwm-shortcodes--shortcodable
+Only:
+  moduleexists: 'shortcodable'
+---
+ShortcodableController:
+  extensions:
+    - 'Milkyway\SS\Shortcodes\Extensions\ShortcodableController'
+
+Member:
+  valid_shortcode_fields:
+    FirstName: 'First Name'
+    Surname: 'Surname'
+    Title: 'Name'
+    NumVisit: 'Number of visits'
+    LastVisited: 'Last Visited Date'
+---
+Only:
+  classexists: 'SiteConfig'
+---
+SiteConfig:
+  valid_shortcode_fields:
+    Title: 'Title'
+    Tagline: 'Tagline'
